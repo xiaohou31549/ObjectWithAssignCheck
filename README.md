@@ -9,8 +9,6 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
-
 ## Installation
 
 ObjectWithAssignCheck is available through [CocoaPods](https://cocoapods.org). To install
@@ -22,7 +20,7 @@ pod 'ObjectWithAssignCheck'
 
 ## Author
 
-8047768, lijun6@joyy.com
+tough913@gmail.com
 
 ## License
 
