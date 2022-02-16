@@ -11,11 +11,18 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Installation
 
-ObjectWithAssignCheck is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
 ```ruby
-pod 'ObjectWithAssignCheck'
+pod 'ObjectWithAssignCheck', :configurations => ['Debug']
+```
+
+## Usage
+
+建议只在Debug下开启该功能，同时在函数调用参数里需要传入项目类前缀，保证只检查该前缀的类，支持数组传入，如不传，其他第三方或者系统类使用了assign来修饰对象，也会走断言。
+
+```oc
+#ifdef DEBUG
+    [ObjectWithAssignCheck checkWithClassPrefixes:@[@"BL", @"BC"]];
+#endif
 ```
 
 ## Author
