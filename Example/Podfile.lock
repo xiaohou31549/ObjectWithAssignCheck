@@ -1,0 +1,16 @@
+PODS:
+  - ObjectWithAssignCheck (0.1.0)
+
+DEPENDENCIES:
+  - ObjectWithAssignCheck (from `../`)
+
+EXTERNAL SOURCES:
+  ObjectWithAssignCheck:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ObjectWithAssignCheck: 1ecf083392a7c1b8d8159ad34313b775269a5b44
+
+PODFILE CHECKSUM: 0f7307033897989d45c64d249063470ec1df66d5
+
+COCOAPODS: 1.10.2

@@ -7,8 +7,11 @@
 //
 
 #import "HHViewController.h"
+#import "ObjectWithAssignCheck.h"
 
 @interface HHViewController ()
+
+@property (nonatomic, assign) NSString *testStr;
 
 @end
 
@@ -18,6 +21,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    [ObjectWithAssignCheck checkWithClassPrefixes:@[@"HH"]];
 }
 
 - (void)didReceiveMemoryWarning
